@@ -1,0 +1,273 @@
+body {
+    background-color: #6d00fc; /* Couleur de fond de la page */
+    color: #ffffff; /* Couleur du texte */
+    font-family: "Trebuchet MS", Verdana, Geneva, Arial, Helvetica, sans-serif; /* Police principale */
+    font-size: small; /* Taille du texte */
+    margin: 2em 1%; /* Marge extérieure */
+    padding: 0; /* Pas de padding */
+}
+
+#page {
+    color: #000000; /* Couleur du texte à l'intérieur de la page */
+    background-color: #ffffff; /* Couleur de fond de la page */
+    border: 3px solid #000000; /* Bordure noire épaisse */
+    min-height: 55em; /* Hauteur minimale */
+    height: 55em; /* Hauteur fixe */
+    box-shadow: inset 0 0 4px #8a2be2, inset 0 0 2px #8a2be2, inset 0 0 8px #8a2be2; /* Effet d'ombre interne */
+}
+
+html > body #page {
+    height: auto; /* Ajuste la hauteur automatiquement pour navigateurs modernes */
+}
+
+header {
+    position: relative; /* Permet le positionnement absolu des éléments internes */
+    margin: 0; /* Supprime les marges autour du header */
+    padding: 0.05em 0; /* Espacement vertical interne */
+    font-size: 200%; /* Taille du texte plus grande */
+    background-color: #17202a; /* Couleur de fond du header */
+    border: 2px solid #6d00fc; /* Bordure violette */
+    box-shadow: 0 0 10px #6d00fc, 0 0 20px #6d00fc; /* Ombres lumineuses violettes */
+    display: flex; /* Utilise Flexbox pour gérer la mise en page */
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: space-between; /* Sépare les éléments horizontalement */
+    width: 100%; /* Fait en sorte que le header prenne toute la largeur de la page */
+    box-sizing: border-box; /* Inclut les bordures et le padding dans la largeur totale */
+}
+
+header h1 {
+    font-family: "Newton Howard Font", Arial, Helvetica, sans-serif; /* Police spécifique pour le titre */
+    color: #ffffff; /* Couleur blanche pour le texte */
+    margin: 0; /* Supprime les marges par défaut */
+    text-align: center; /* Centre le titre horizontalement */
+    flex-grow: 1; /* Permet au titre de prendre l'espace disponible */
+    order: 2; /* Place le titre entre le logo et la barre de recherche */
+}
+
+
+header .logo {
+    float: left; /* Place le logo à gauche */
+    margin: 20px 0 5px 1%; /* Marges autour du logo */
+    display: block; /* Affiche le logo comme un bloc */
+}
+
+nav {
+    left: 5%; /* Positionnement à 5% du bord gauche */
+    position: absolute; /* Position absolue pour le menu */
+    width: 15%; /* Largeur fixe pour la barre de navigation */
+    overflow: hidden; /* Cache tout contenu débordant */
+    margin-top: 20px; /* Ajoute une marge supérieure pour descendre le menu */
+}
+
+
+nav h3 {
+    border-color: #6d00fc; /* Couleur de bordure violette */
+    border-style: solid; /* Style de bordure solide */
+    border-width: 0 0 3px 0; /* Bordure uniquement en bas */
+    font-size: medium; /* Taille moyenne pour le texte */
+    font-weight: bold; /* Texte en gras */
+    margin: 0; /* Pas de marge */
+    padding-left: 0; /* Pas de padding à gauche */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+}
+
+nav ul {
+    margin: 0.5em 0 1.5em; /* Marge autour de la liste */
+}
+
+nav a {
+    display: block; /* Affiche chaque lien comme un bloc */
+}
+
+nav li {
+    list-style: none; /* Supprime les puces des listes */
+}
+
+article {
+    background-color: #f5f8fc; /* Couleur de fond de l'article */
+    border: 1px solid #6090c0; /* Bordure bleue légère */
+    margin: 30px 3% 2em 21%; /* Ajoute une marge supérieure de 30px pour descendre le texte */
+    padding: 0 2% 3em 2%; /* Espacement interne */
+    color: #000000; /* Couleur du texte */
+}
+
+
+article h2 {
+    border-color: #6d00fc; /* Couleur de la bordure violette */
+    border-style: solid; /* Style de bordure solide */
+    border-width: 0 0 3px 0; /* Bordure en bas uniquement */
+    color: #6d00fc; /* Couleur violette pour le titre */
+}
+
+.rapper-gallery {
+    display: grid; /* Affiche les éléments sous forme de grille */
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    gap: 20px; /* Espacement entre les éléments */
+    padding: 20px; /* Espacement interne de la galerie */
+    max-width: 1200px; /* Largeur maximale */
+    margin: 0 auto; /* Centre la galerie horizontalement */
+}
+
+.rapper {
+    text-align: center; /* Centre le contenu textuellement */
+    border: 1px solid #6d00fc; /* Bordure violette */
+    padding: 10px; /* Espacement interne */
+    border-radius: 8px; /* Coins arrondis */
+    background-color: #f5f8fc; /* Couleur de fond claire */
+    box-shadow: 0 0 10px rgba(109, 0, 252, 0.2); /* Ombre douce violette */
+}
+
+.rapper img {
+    max-width: 100%; /* L'image prend toute la largeur du conteneur */
+    height: auto; /* Ajuste automatiquement la hauteur */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+.rapper p {
+    font-weight: bold; /* Texte en gras */
+    margin-top: 10px; /* Marge au-dessus du paragraphe */
+    color: #6d00fc; /* Couleur violette pour le texte */
+}
+
+.menu {
+    list-style-type: none; /* Supprime les puces des menus */
+    padding: 0; /* Pas de padding */
+    margin: 0; /* Pas de marge */
+    border-radius: 8px; /* Coins arrondis */
+    background-color: #333; /* Couleur de fond sombre */
+    width: 200px; /* Largeur fixe pour le menu */
+}
+
+.menu > li {
+    position: relative; /* Nécessaire pour le positionnement des sous-menus */
+    border-radius: 8px; /* Coins arrondis */
+    display: block; /* Affiche chaque élément en ligne */
+}
+
+.menu > li > a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    border-radius: 8px; /* Coins arrondis */
+    color: white; /* Texte blanc */
+    padding: 15px 20px; /* Espacement interne des liens */
+    display: block; /* Chaque lien est un bloc */
+    font-weight: bold; /* Texte en gras */
+    white-space: nowrap; /* Empêche les retours à la ligne */
+}
+
+.menu > li > a:hover {
+    background-color: #555; /* Change la couleur au survol */
+}
+
+.submenu {
+    display: none; /* Cache les sous-menus par défaut */
+    background-color: #333; /* Couleur de fond des sous-menus */
+    border-radius: 8px; /* Coins arrondis */
+    list-style-type: none; /* Supprime les puces */
+    padding: 0; /* Pas de padding */
+    margin: 0; /* Pas de marge */
+}
+
+.submenu li a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: white; /* Texte blanc */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 12px 20px; /* Espacement interne */
+    display: block; /* Chaque lien est un bloc */
+}
+
+.submenu li a:hover {
+    background-color: #555; /* Change la couleur au survol */
+}
+
+.menu > li:hover .submenu {
+    display: block; /* Affiche le sous-menu au survol */
+}
+
+.menu > li:hover > a, 
+.menu > li:hover .submenu li a {
+    color: violet; /* Change la couleur du texte au survol */
+}
+
+.rapper-description {
+    display: flex; /* Affiche les éléments côte à côte */
+    align-items: center; /* Centre les éléments verticalement */
+    gap: 20px; /* Espace entre les éléments */
+    margin: 20px auto; /* Centrage horizontal */
+    padding: 20px; /* Espacement interne */
+    max-width: 800px; /* Largeur maximale */
+    background-color: #f5f8fc; /* Couleur de fond claire */
+    border: 2px solid #6d00fc; /* Bordure violette */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(109, 0, 252, 0.2); /* Ombre douce violette */
+}
+
+.rapper-image {
+    flex: 1; /* La partie image occupe moins d'espace */
+    max-width: 300px; /* Largeur maximale de l'image */
+}
+
+.rapper-image img {
+    width: 100%; /* L'image occupe toute la largeur */
+    height: auto; /* Ajuste automatiquement la hauteur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère autour de l'image */
+}
+
+.rapper-info {
+    flex: 2; /* La partie texte occupe plus d'espace */
+    text-align: left; /* Texte aligné à gauche */
+    color: #6d00fc; /* Couleur violette pour le texte */
+}
+
+.rapper-info h2 {
+    margin-bottom: 10px; /* Marge en bas du titre */
+    color: #6d00fc; /* Couleur violette */
+    border-bottom: 2px solid #6d00fc; /* Bordure sous le titre */
+    padding-bottom: 5px; /* Espacement sous le texte */
+    background-position: 500px;
+
+}
+#search-container {
+    position: absolute; /* Positionnement absolu pour la placer précisément */
+    top: 45%; /* Aligne verticalement au centre du bandeau noir */
+    right: 75px; /* Distance du bord gauche */
+    transform: translateY(-50%); /* Centre parfaitement verticalement */
+    z-index: 100; /* S'assure qu'il est au-dessus des autres éléments */
+    display: flex; /* Aligne la barre de recherche et le bouton horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    background-color: transparent; /* Fond transparent */
+}
+
+
+#search-container button {
+    padding: 5px 10px; /* Taille du bouton */
+    border: none; /* Pas de bordure */
+    background-color: #6d00fc; /* Couleur violette pour correspondre au thème */
+    color: white; /* Texte blanc */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Pointeur cliquable */
+}
+
+#search-container button:hover {
+    background-color: #4a00b3; /* Couleur plus sombre au survol */
+}
+#site-search::placeholder {
+    color: rgb(255, 255, 255); /* Texte du placeholder en blanc */
+    opacity: 1; /* Rendre le texte bien visible */
+}
+
+#site-search {
+    width: 200px; /* Largeur de la barre de recherche */
+    padding: 5px; /* Espacement interne */
+    border: 1px solid #6d00fc; /* Bordure violette */
+    border-radius: 4px; /* Coins arrondis */
+    background-color: white; /* Fond blanc pour la barre */
+    color: black; /* Texte en noir */
+    margin-right: 10px; /* Espacement entre la barre et le bouton */
+}
+
+/* Couleur du texte du placeholder (texte par défaut) */
+#site-search::placeholder {
+    color: black; /* Texte du placeholder en noir */
+    opacity: 1; /* Rendre le texte bien visible */
+}

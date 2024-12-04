@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+       <meta charset="utf-8">
+	   <!--<link  href="TP01Style.css" rel="stylesheet"> -->
+	   <title></title>
+   </head>
+   <body>
+808CORP
+
+Accueil
+
+L'ACTUALITÉ DU RAP
+
+FRANÇAIS
+AMERICAIN
+ANGLAIS
+
+ESPACE PRODS
+
+L'ACTUALITE DU BEATMAKING
+VOS PRODS
+ACHATS DE PRODS
+
+LE STUDIO
+
+RESERVATIONS SEANCES
+CONSEILS D'INGÉ-SONS
+CONSEILS DES BEATMAKERS
+
+Présentation du site
+Ce site a pour objectif de vous présenter l'actualité du rap FR/US/UK.
+</body>
